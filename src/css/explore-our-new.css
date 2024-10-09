@@ -1,0 +1,130 @@
+.modal.explore {
+  width: 311px;
+  height: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal.explore {
+    width: 538px;
+    height: 412px;
+  }
+}
+.explore-modal-img {
+  min-width: 311px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+  .explore-modal-img {
+    min-width: 538px;
+  }
+}
+
+.modal-cross {
+  position: absolute;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  fill: var(--white-color);
+  background-color: transparent;
+  transition: color var(--time-function), background-color var(--time-function);
+}
+
+.modal-cross:hover,
+.modal-cross:focus {
+  fill: var(--main-accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .cross {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.section-title.explore-title {
+  margin-bottom: 24px;
+  text-align: left;
+  font-size: 20px;
+}
+.section-title-accent.explore-title-accent {
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .section-title.explore-title {
+    margin-bottom: 28px;
+    text-align: left;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-title-accent.explore-title-accent {
+    font-size: 24px;
+  }
+}
+
+.explore-info {
+  padding: 32px 24px;
+}
+@media screen and (min-width: 768px) {
+  .explore-info {
+    padding: 40px;
+  }
+}
+.explore-wrap {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .explore-wrap {
+    display: flex;
+    gap: 8px;
+  }
+}
+.explore-mail {
+  padding: 14px 18px;
+  width: 100%;
+  min-height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 25px;
+  line-height: 1.21;
+  box-shadow: 0 5.44px 5.44px #00000008;
+  transition: border-color var(--time-function);
+}
+.explore-mail::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  color: var(--placeholder-text);
+}
+@media screen and (min-width: 768px) {
+  .explore-mail {
+    min-width: 313px;
+    min-height: 52px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .explore-mail::placeholder {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}
+.btn.explore-modal-btn {
+  position: absolute;
+  min-height: 45px;
+  top: 88%;
+  left: 99%;
+  transform: translate(-99%, -88%) scale(1);
+
+  transition: transform var(--time-function);
+}
+@media screen and (min-width: 768px) {
+  .btn.explore-modal-btn {
+    padding: 16px 42px;
+    min-width: 137px;
+    min-height: 52px;
+  }
+}

@@ -1,0 +1,117 @@
+.section.reviews {
+  padding-top: 0px;
+}
+.section-title.reviews {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 72px;
+}
+
+.reviews-item {
+  padding-top: 34px;
+}
+
+.review-content {
+  position: relative;
+  text-align: center;
+  background-color: var(--white-color);
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+}
+.reviews-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.review-thumb {
+  height: 200px;
+
+  padding-top: 54px;
+  padding-bottom: 42px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.reviews-name {
+  margin-bottom: 24px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--primary-color);
+}
+.review-text {
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: rgba(17, 17, 17, 0.7);
+}
+.btn.reviews {
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  border: 1px solid var(--main-accent-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.btn.reviews:hover,
+.btn.reviews:focus {
+  border: 1px solid var(--main-accent-color);
+  background-color: var(--main-accent-color);
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container.slick-container {
+    width: 734px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container.slick-container {
+    width: 100%;
+  }
+  .section-title.reviews {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+  .reviews-accent {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .reviews-list {
+  display: flex;
+  flex-direction: column;
+}
+  .reviews-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+
+  .reviews-thumb {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .btn.reviews {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container.slick-container {
+    max-width: 1166px;
+  }
+
+  .reviews-item {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+
+  .reviews-thumb {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 26px;
+    padding-top: 56px;
+  }
+
+  .slick-track {
+    gap: 28px;
+  }
+}

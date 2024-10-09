@@ -1,0 +1,182 @@
+/* Leave-A-Review Modal Window */
+
+.modal.review {
+  padding: 32px 24px;
+  width: 311px;
+  height: 471px;
+}
+@media screen and (min-width: 768px) {
+  .modal.review {
+    width: 517px;
+    height: 617px;
+    padding: 40px;
+  }
+}
+
+.modal-close-leave-a-review-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  transition: background-color var(--time-function);
+}
+.modal-close-icon-leave-a-review {
+  transition: fill var(--time-function);
+}
+.modal-close-leave-a-review-btn:hover,
+.modal-close-leave-a-review-btn:focus {
+  background-color: var(--main-hover-color);
+}
+.modal-close-leave-a-review-btn:hover .modal-close-icon-leave-a-review:hover,
+.modal-close-leave-a-review-btn:focus .modal-close-icon-leave-a-review:focus {
+  fill: var(--main-accent-color);
+}
+/*    MODAL FORM */
+.modal-form-leave-a-review {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-leave-a-review-title.section-title {
+  text-align: left;
+  margin-bottom: 32px;
+}
+.modal-leave-a-review-span {
+  color: var(--main-accent-color);
+}
+
+.modal-form-leave-a-review-field {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.modal-form-leave-a-review-input {
+  padding: 14px 18px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0 5.44px 5.44px #00000008;
+  background-color: var(--white-color);
+  transition: border-color var(--time-function);
+}
+
+.modal-form-leave-a-review-input::placeholder,
+.modal-form-leave-a-review-message::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--placeholder-color);
+}
+
+.modal-form-phone-wrapper {
+  display: block;
+  position: relative;
+}
+
+.flag-phone {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+.input-phone {
+  padding-left: 106px;
+}
+.modal-form-leave-review-input-tel-text {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+.modal-form-leave-review-input-tel-text::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  width: 1px;
+  height: 25px;
+  background-color: var( --placeholder-color);
+}
+.modal-form-leave-a-review-input:focus,
+.modal-form-leave-a-review-message:focus {
+  border-color: var(--main-accent-color);
+  outline: none;
+}
+.modal-form-leave-a-review-message {
+  display: block;
+  padding: 14px 18px;
+  width: 100%;
+  resize: none;
+  height: 91px;
+  border-radius: 8px;
+  box-shadow: 0 5.44px 5.44px #00000008;
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
+  transition: border-color var(--time-function);
+}
+
+.modal-form-leave-a-review-field-message {
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form-leave-a-review-title.section-title {
+    font-size: 20px;
+  }
+  .modal-form-leave-a-review-title-wrap {
+    width: 255px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-form-leave-a-review-title.section-title {
+    margin-bottom: 40px;
+  }
+  .modal-form-leave-a-review-title-wrap {
+    width: 298px;
+  }
+  .modal-form-leave-a-review-field {
+    margin-bottom: 19px;
+  }
+  .modal-form-leave-a-review-input {
+    padding: 22px 24px;
+  }
+  .modal-form-leave-a-review-input::placeholder,
+  .modal-form-leave-a-review-message::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .input-phone {
+    padding-left: 177px;
+  }
+
+  .flag-phone {
+    width: 32px;
+    height: 24px;
+    left: 24px;
+  }
+  .modal-form-leave-review-input-tel-text {
+    left: 74px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .modal-form-leave-review-input-tel-text::after {
+    right: -32px;
+  }
+  .modal-form-leave-a-review-message {
+    height: 137px;
+  }
+  .btn.modal-form-leave-a-review-btn {
+    padding: 14px 40px;
+  }
+  .modal-form-leave-review-input-tel-text::after {
+    height: 35px;
+  }
+}

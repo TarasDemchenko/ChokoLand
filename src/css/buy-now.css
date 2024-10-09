@@ -1,0 +1,302 @@
+.modal.buynow {
+  min-width: 311px;
+  max-height: 90vh;
+  overflow-y: scroll;
+  padding: 32px 24px;
+}
+.modal-close-buynow-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+  transition: background-color var(--time-function);
+}
+.modal-close-buynow-btn:hover,
+.modal-close-buynow-btn:focus {
+  background-color: var(--main-hover-color);
+}
+.modal-close-buynow-btn:hover .modal-close-icon-buynow,
+.modal-close-buynow-btn:focus .modal-close-icon-buynow {
+  fill: var(--main-accent-color);
+}
+
+.modal-close-icon-buynow {
+  transition: fill var(--time-function);
+}
+.modal-title.section-title {
+  margin-bottom: 32px;
+
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: var(--main-accent-color);
+}
+.modal-title-span {
+  color: var(--primary-color);
+}
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.modal-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  width: 263px;
+  height: 85px;
+
+  background: var(--white-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+.modal-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.modal-picture {
+  margin-right: auto;
+}
+.modal-item-text {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 29px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--primary-color);
+
+  background: var(--products-btn-bg);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.modal-input-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 29px;
+  opacity: 0;
+  border-radius: 100px;
+  cursor: pointer;
+  pointer-events: none;
+}
+.modal-item-text .modal-input-span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 6px 16px;
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  transition: 0.5s ease;
+}
+.modal-input-check[type='checkbox']:checked ~ .modal-input-span {
+  background-color: var(--main-hover-color);
+  color: var(--main-accent-color);
+  border-color: var(--main-accent-color);
+}
+
+.modal-form-buynow-field {
+  width: 100%;
+  display: block;
+  margin-bottom: 14px;
+}
+.modal-form-buynow-input {
+  padding: 14px 18px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0 5.44px 5.44px #00000008;
+  background-color: var(--white-color);
+  transition: border-color var(--time-function);
+  outline: none;
+}
+.label-desc {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.modal-form-buynow-input::placeholder,
+.modal-form-buynow-message::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--placeholder-color);
+}
+.input-buy-phone {
+  padding-left: 106px;
+}
+.modal-form-phone-buy-wrapper {
+  display: block;
+  position: relative;
+}
+.flag-buy-phone {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+.modal-form-buy-input-tel-text {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+.modal-form-buy-input-tel-text::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  width: 1px;
+  height: 25px;
+  background-color: var(--placeholder-color);
+}
+.icon-card {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.modal-form-buynow-message {
+  display: block;
+  padding: 14px 18px;
+  width: 100%;
+  resize: none;
+  height: 91px;
+  border-radius: 8px;
+  box-shadow: 0 5.44px 5.44px #00000008;
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
+  transition: border-color var(--time-function);
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal.buynow {
+    min-width: 609px;
+    padding: 40px;
+  }
+
+  .modal-title.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .modal-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .modal-item {
+    flex-direction: column;
+    padding: 18px 20px;
+    width: 160px;
+    height: 196px;
+    gap: 14px;
+  }
+  .modal-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .modal-close-icon-buynow {
+    width: 28px;
+    height: 28px;
+  }
+  .modal-item-text {
+    width: 96px;
+    height: 33px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-input-check {
+    width: 96px;
+    height: 33px;
+  }
+  .modal-item-text .modal-input-span {
+    padding: 8px 28px;
+  }
+
+  .buynow-form-name {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 21px;
+  }
+  .modal-picture {
+    margin-right: 0;
+  }
+  .modal-form-buynow-input {
+    padding: 22px 24px;
+  }
+  .modal-form-buynow-input::placeholder,
+  .modal-form-buynow-message::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .label-desc {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .modal-form-buynow-field {
+    margin-bottom: 18px;
+  }
+  .input-buy-phone {
+    padding-left: 165px;
+  }
+  .flag-buy-phone {
+    width: 32px;
+    height: 32px;
+  }
+  .modal-form-buy-input-tel-text {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 18px;
+  }
+  .modal-form-buy-input-tel-text::after {
+    right: -25px;
+    height: 32px;
+  }
+  .icon-card {
+    width: 32px;
+    height: 32px;
+    top: 15px;
+    right: 20px;
+  }
+  .modal-form-buynow-message {
+    height: 137px;
+  }
+  .btn.modal-form-buynow-btn {
+    padding: 14px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal.buynow::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--placeholder-color);
+  }
+  .modal.buynow {
+    padding: 48px;
+  }
+}
